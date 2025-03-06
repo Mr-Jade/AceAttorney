@@ -131,19 +131,19 @@ body .header {
 }
 
 .language span:hover {
-    color:#F7DEA6;
+    color: #F7DEA6;
 }
 
-body .hline1{
+body .hline1 {
     width: 100%;
-    height: 1.25vh;
+    height: 1.5vh;
     background: linear-gradient(#AD794D, #412c1b 70%);
     position: relative;
     width: 100%;
     display: flex;
 }
 
-body .hline2{
+body .hline2 {
     width: 100%;
     height: 0.75vh;
     background: linear-gradient(#AD794D, #412c1b 30%);
@@ -152,7 +152,7 @@ body .hline2{
     display: flex;
 }
 
-body .slider{
+body .slider {
     padding-top: 0vh;
     height: 67vh;
     width: 100vw;
@@ -160,13 +160,64 @@ body .slider{
     overflow: hidden;
 }
 
-.slider img{
+.slider img {
     width: 100%;
     height: 100%;
     opacity: 1;
     transition: 0.2s ease-in-out;
 }
 
-.slider img:hover{
+.slider img:hover {
     opacity: 0.85;
+}
+
+.slecter {
+    width: 100%;
+    height: 16vh;
+    background-repeat: repeat;
+    padding-top: 3vh;
+    padding-left: 27vw;
+    background: linear-gradient(to right, #7A6F5E, #DED3B6, #7A6F5E);
+}
+
+.slecter img {
+    width: 7vw;
+    margin-left: 1.5vw;
+}
+
+.news {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../images/news_bg.png);
+    background-repeat: repeat;
+}
+
+body .PRODUCT-LINEUP {
+    width: 100%;
+    height: 270vh;
+}
+
+body .INTRODUCTION {
+    width: 100%;
+    height: 167.5vh;
+    background-size: 100%;
+    background-image: url(../images/about_bg_en.jpg);
+}
+
+body .ACCOUNTS {
+    width: 100%;
+    height: 40vh;
+    background-color: #F1F0EC;
+}
+
+body .ADS {
+    width: 100%;
+    height: 30vh;
+    background-color: #4B2A10;
+}
+
+body .footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #000000;
 }
