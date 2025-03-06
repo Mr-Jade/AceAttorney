@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+h3 {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+button {
+  /* 清除默认边框 */
+  border: 0;
+  outline: none;
+  /*清除默认背景 */
+  background-color: transparent;
+}
+
+a {
+	text-decoration: none; /* 去除默认的下划线 */
+	outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
+	color: #000;	/* 去除默认的颜色和点击后变化的颜色 */ 
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
