@@ -155,7 +155,9 @@ body .hline2{
 body .slider{
     padding-top: 0vh;
     height: 67vh;
+    width: 100vw;
     background-color: white;
+    overflow: hidden;
 }
 
 .slider img{
@@ -168,4 +170,3 @@ body .slider{
 .slider img:hover{
     opacity: 0.85;
 }
-
