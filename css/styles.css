@@ -3,6 +3,7 @@ body {
     background: url(../images/lineup_bg.jpg) no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+    font-family: "SourceSans3-Light";
 }
 
 body .header {
@@ -45,7 +46,7 @@ body .header {
     line-height: 1;
     color: white;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.8vw;
     opacity: 1;
     transition: 0.3s ease-in-out;
@@ -68,15 +69,15 @@ body .header {
     padding-top: 6vh;
     width: 2vw;
     margin-left: 2.5vw;
+    transform: translateY(1vh);
 }
 
 .menu a {
-    letter-spacing: 1.5px;
     line-height: 1;
     color: white;
     text-align: center;
-    font-weight: 600;
-    font-size: 1vw;
+    font-weight: 400;
+    font-size: 1.1vw;
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
@@ -117,13 +118,14 @@ body .header {
 .language span {
     margin-top: 8vh;
     position: relative;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: 1;
     color: white;
     text-align: center;
-    font-weight: 600;
-    font-size: 1vw;
+    font-weight: 400;
+    font-size: 1.1vw;
     transition: 0.2s ease-in-out;
+    cursor:pointer;
 }
 
 .language ul {
@@ -136,8 +138,8 @@ body .header {
 
 body .hline1 {
     width: 100%;
-    height: 1.5vh;
-    background: linear-gradient(#AD794D, #412c1b 70%);
+    height: 1.3vh;
+    background: linear-gradient(#AD794D, #412c1b 85%);
     position: relative;
     width: 100%;
     display: flex;
@@ -146,7 +148,7 @@ body .hline1 {
 body .hline2 {
     width: 100%;
     height: 0.75vh;
-    background: linear-gradient(#AD794D, #412c1b 30%);
+    background: linear-gradient(#AD794D, #412c1b 50%);
     position: relative;
     width: 100%;
     display: flex;
@@ -163,6 +165,7 @@ body .slider {
     width: 100%;
     height: 100%;
     opacity: 1;
+    cursor:pointer;
     transition: 0.2s ease-in-out;
 }
 
@@ -182,6 +185,7 @@ body .slider {
 .slecter img {
     width: 7vw;
     margin-left: 1.5vw;
+    cursor:pointer;
 }
 
 .news {
@@ -197,6 +201,7 @@ body .slider {
     max-width: 40vw;
     max-height: 55%;
     object-fit: contain;
+    cursor:pointer;
     border: #000000 solid 0.1vh;
 }
 
@@ -248,7 +253,7 @@ body .PRODUCT-LINEUP {
     margin-top: 5vh;
     margin-left: 12vw;
     width: 80vw;
-    height: 120vh;
+    height: 145vh;
 }
 
 .PRODUCT-LINEUP h2 {
@@ -293,6 +298,14 @@ body .PRODUCT-LINEUP {
     margin-left: 0.2%;
     margin-top: 0.2%;
     margin-bottom: 1vh;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+    cursor:pointer;
+}
+
+
+.game img:hover {
+    opacity: 0.85
 }
 
 .game .text {
@@ -303,9 +316,8 @@ body .PRODUCT-LINEUP {
 
 .game span {
     text-align: left;
-    margin-left: 1vw;
     font-size: 1.2vw;
-    font-weight: 600;
+    font-weight: 400;
     color: #746236;
 }
 
@@ -318,7 +330,6 @@ body .PRODUCT-LINEUP {
 
 .pf-list {
     margin-top: 1vh;
-    margin-left: 1vw;
     display: flex;
     width: 100%;
     flex-flow: row wrap;
@@ -359,6 +370,33 @@ body .PRODUCT-LINEUP {
 .esrb img {
     width: 6vw;
 }
+
+.MOBILE-GAMES {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    width: 80vw;
+    height: 120vh;
+}
+
+
+.MOBILE-GAMES .line {
+    margin-top: 2.5vh;
+    width: 100%;
+    height: 0.3vh;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
 
 
 
