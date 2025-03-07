@@ -154,8 +154,7 @@ body .hline2 {
 
 body .slider {
     padding-top: 0vh;
-    height: 67vh;
-    width: 100vw;
+    height: 65vh;
     background-color: white;
     overflow: hidden;
 }
@@ -190,12 +189,186 @@ body .slider {
     height: 30vh;
     background-image: url(../images/news_bg.png);
     background-repeat: repeat;
+    display: flex;
+}
+
+.news img {
+    margin-top: 6vh;
+    max-width: 40vw;
+    max-height: 55%;
+    object-fit: contain;
+    border: #000000 solid 0.1vh;
+}
+
+.news .news1 {
+    margin-left: 15%;
+}
+
+.news .news2 {
+    margin-left: 3.5%;
 }
 
 body .PRODUCT-LINEUP {
     width: 100%;
     height: 270vh;
 }
+
+.PRODUCT-LINEUP h1:before {
+    background-image: url(../images/mark_whback.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    top: 1vh;
+    left: -2.5vw;
+    transform: translateY(-50%);
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute;
+}
+
+.PRODUCT-LINEUP h1 {
+    text-align: center;
+    margin-top: 4vh;
+    position: relative;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5vw;
+    transform: translateX(-3vw);
+}
+
+.PRODUCT-LINEUP h1 img {
+    max-width: 6vw;
+    transform: translateY(10px);
+}
+
+.GAMES {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    width: 80vw;
+    height: 120vh;
+}
+
+.PRODUCT-LINEUP h2 {
+    margin-top: 4vh;
+    position: relative;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+.GAMES .line {
+    margin-top: 2.5vh;
+    width: 100%;
+    height: 0.3vh;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.GAMES .blocks {
+    margin-top: 7vh;
+    width: 75vw;
+    margin-left: 2.5vw;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.GAMES .blocks .game {
+    margin-right: 2%;
+    width: 45%;
+    height: 57vh;
+    display: block;
+    background-color: white;
+    margin-bottom: 2vh;
+}
+
+.game img {
+    max-width: 99.6%;
+    margin-left: 0.2%;
+    margin-top: 0.2%;
+    margin-bottom: 1vh;
+}
+
+.game .text {
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    width: 75%;
+}
+
+.game span {
+    text-align: left;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #746236;
+}
+
+
+.GAMES .game .discript {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.pf-list {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.pf-list-item {
+    border-radius: 25px;
+    width: 7.2vw;
+    height: 2.5vh;
+    text-align: center;
+    margin-right: 1vw;
+    margin-top: 2.5vh;
+    color: white;
+}
+
+.switch {
+    background-color: #E84017;
+}
+
+.ps4 {
+    background-color: #0068BF;
+}
+
+.xone {
+    background-color: #107C10;
+}
+
+.steam,
+.windows {
+    background-color: #333333;
+}
+
+.discript .esrb {
+    max-width: 100%;
+    height: 100%;
+}
+
+.esrb img {
+    width: 6vw;
+}
+
+
+
+
+
+
+
+
+
+
 
 body .INTRODUCTION {
     width: 100%;
@@ -218,6 +391,6 @@ body .ADS {
 
 body .footer {
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     background-color: #000000;
 }
