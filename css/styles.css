@@ -215,8 +215,17 @@ body .slider {
 
 body .PRODUCT-LINEUP {
     width: 100%;
-    height: 270vh;
+    height: 275vh;
 }
+
+
+
+
+
+
+
+
+
 
 .PRODUCT-LINEUP h1:before {
     background-image: url(../images/mark_whback.png);
@@ -294,11 +303,10 @@ body .PRODUCT-LINEUP {
 }
 
 .game img {
-    max-width: 99.6%;
-    margin-left: 0.2%;
-    margin-top: 0.2%;
+    width: 33.7vw;
     margin-bottom: 1vh;
     opacity: 1;
+    border: white 0.1vw solid;
     transition: 0.2s ease-in-out;
     cursor:pointer;
 }
@@ -322,7 +330,7 @@ body .PRODUCT-LINEUP {
 }
 
 
-.GAMES .game .discript {
+.GAMES .game .discription {
     display: flex;
     width: 100%;
     height: 40%;
@@ -362,7 +370,7 @@ body .PRODUCT-LINEUP {
     background-color: #333333;
 }
 
-.discript .esrb {
+.discription .esrb {
     max-width: 100%;
     height: 100%;
 }
@@ -379,7 +387,7 @@ body .PRODUCT-LINEUP {
 }
 
 
-.MOBILE-GAMES .line {
+.MOBILE-GAMES .line1 {
     margin-top: 2.5vh;
     width: 100%;
     height: 0.3vh;
@@ -389,8 +397,74 @@ body .PRODUCT-LINEUP {
     display: flex;
 }
 
+.MOBILE-GAMES .blocks {
+    display: flex;
+    margin-top: 7vh;
+    flex-flow: row wrap;
+}
 
+.MOBILE-GAMES .blk {
+    display: flex;
+    margin-bottom: 7vh;
+    margin-right: 3.6vw;
+}
 
+.MOBILE-GAMES .blocks img {
+    max-width: 10vw;
+    max-height: 10vw;
+    border-radius: 2vw;
+}
+
+.MOBILE-GAMES .blocks p {
+    padding-left: 1vw ;
+    margin-bottom: 1.5vh;
+    color: white;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.MOBILE-GAMES .discription div {
+    width: 12vw;
+    height: 5vh;
+    border: #ffffff 0.1vh solid;
+    margin-top: 1.5vh;
+    margin-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+}
+
+.MOBILE-GAMES .blocks .pointer {
+    margin-top: 0.62vh;
+    transform: scale(1, 1.8);
+}
+
+.MOBILE-GAMES .blocks .as-index {
+    padding-left: 2vw;
+    margin-top: 1vh;
+}
+
+.MOBILE-GAMES .blocks .gp-index {
+    padding-left: 1.5vw;
+    margin-top: 1vh;
+}
+
+.MOBILE-GAMES .discription .btn-as{
+    background-color: #333333;
+}
+
+.MOBILE-GAMES .discription .btn-gp{
+    background-color: #00875F;
+}
+
+.MOBILE-GAMES .line2 {
+    margin-top: 3vh;
+    width: 60vw;
+    height: 0.1vh;
+    background-color: white;
+    position: relative;
+    display: flex;
+    margin-left: 8vw;
+}
 
 
 
@@ -473,7 +547,7 @@ body .ADS {
 
 body .footer {
     width: 100%;
-    height: 13vh;
+    height: 15vh;
     background-color: #000000;
     display: flex;
     color: #ffffff;
