@@ -1,1 +1,1 @@
-https://mr_jade.github.io/
+https://mr-jade.github.io/AceAttorney/
