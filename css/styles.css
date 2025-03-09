@@ -385,12 +385,11 @@ body .slider {
 .MOBILE-GAMES {
     margin-left: 12vw;
     width: 80vw;
-    height: 50vw;
+    height: 47vw;
 }
 
 
 .MOBILE-GAMES .line1 {
-    margin-top: 1.5vw;
     width: 100%;
     height: 0.2vw;
     background-color: white;
@@ -481,9 +480,9 @@ body .slider {
     margin-right: 2vw;
 }
 
-body .INTRODUCTION {
+.INTRODUCTION {
     width: 100%;
-    height: 110vw;
+    height: 97vw;
     background-size: 100%;
     background-image: url(../images/about_bg_en.jpg);
     position: relative;
