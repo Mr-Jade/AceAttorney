@@ -3,7 +3,7 @@ body {
     background: url(../images/lineup_bg.jpg) no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    font-family: "SourceSans3-Light";
+    font-family: "source-han-sans-japanese", "SourceSans3-Light", sans-serif;
 }
 
 body .header {
@@ -26,10 +26,10 @@ body .header {
 }
 
 
-.header .logo {
+.header .logo_en {
     margin-left: 7%;
     margin-top: 0.56vw;
-    margin-bottom: 0.28vw;
+    margin-bottom: 0.2vw;
     background-image: url(../images/logo_series_en.png);
     width: 13vw;
     height: 5.8vw;
@@ -41,8 +41,23 @@ body .header {
     transition: 0.3s ease-in-out;
 }
 
+.header .logo_jp {
+    margin-left: 7%;
+    margin-top: 0.56vw;
+    margin-bottom: 0.2vw;
+    background-image: url(../images/logo_series.png);
+    width: 12vw;
+    height: 5.8vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0px;
+    display: block;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
 .header .title {
-    padding-left: 20%;
+    margin-left: 20%;
     width: 12vw;
     line-height: 1;
     color: white;
@@ -83,7 +98,7 @@ body .header {
     transition: 0.3s ease-in-out;
 }
 
-/* 未能控制前一个元素的opacity，待完善，预计改用css */
+/* 未能控制前一个元素的opacity，待完善，预计改用js */
 .menu .LINEUP:hover {
     opacity: 0.8;
 }
@@ -166,7 +181,6 @@ body .slider {
     height: 100%;
     opacity: 1;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
 
 .slider img:hover {
@@ -197,21 +211,14 @@ body .slider {
 
 .news_all {
     width: 100%;
-    height: 16.9vw;
+    height: 15vw;
     display: flex;
-}
-
-.news_jp {
-    width: 100%;
-    height: 16.9vw;
-    /* display: flex; */
-    display: none;
 }
 
 .news .news_all img {
     margin-top: 3.4vw;
     max-width: 40vw;
-    max-height: 55%;
+    max-height: 8.3vw;
     object-fit: contain;
     cursor: pointer;
     border: #000000 solid 0.1vw;
@@ -224,6 +231,129 @@ body .slider {
 .news_all .news2 {
     margin-left: 1.5vw;
 }
+
+.news_jp {
+    margin-top: -2vw;
+    width: 100%;
+    height: 95vw;
+    display: block;
+    text-align: center;
+    position: relative;
+    /* display: none; */
+}
+
+.news_jp h1 {
+    transform: translatex(-2vw);
+    position: relative;
+    color: #623E21;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+
+.news_jp h1 img {
+    transform: translateY(2vw);
+}
+
+.news_jp h2 {
+    position: relative;
+    color: #623E21;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.news_jp .information {
+    margin-top: 3vw;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding-left: 11%;
+}
+
+.information .block {
+    border-radius: 0.5vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    position: relative;
+    width: 18vw;
+    height: 32vw;
+    background-color: #F1F0EC;
+    -webkit-box-shadow: 0px 10px 39px 2px rgba(62, 66, 66, 0.33);
+    -moz-box-shadow: 0px 10px 39px 2px rgba(62, 66, 66, 0.33);
+    box-shadow: 0px 10px 39px 2px rgba(62, 66, 66, 0.33);
+}
+
+.information .block img {
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.information .block img:hover{
+    opacity: 0.7;
+}
+
+.information .inner {
+    padding: 1vw;
+    text-align: justify;
+}
+
+.information .block .date {
+    text-align: left;
+    color: #746C51;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-bottom: 1.5vw;
+}
+
+.information .block .sale {
+    position: absolute;
+    color: #746C51;
+    font-size: 0.8vw;
+    font-weight: 700;
+    bottom: 11vw;
+    right: 1.5vw;
+    background-color: white;
+    padding: 0.2vw;
+}
+
+.information span {
+    font-size: 1vw;
+}
+
+.news_jp .btn {
+    position: relative;
+    margin-top: 2.8vw;
+    color: white;
+    background: linear-gradient(#2A5EAB, #445571 77%);
+    width: 20%;
+    margin-left: 40%;
+    padding-top: 1.1vw;
+    padding-bottom: 1.1vw;
+    text-align: center;
+    border-radius: 1.1vw;
+    border: white 0.2vw solid;
+    -webkit-box-shadow: 0px 10px 39px 0px rgba(62, 66, 66, 0.4);
+    -moz-box-shadow: 0px 10px 39px 0px rgba(62, 66, 66, 0.4);
+    box-shadow: 0px 10px 39px 0px rgba(62, 66, 66, 0.4);
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.news_jp .btn:hover{
+    opacity: 0.8;
+}
+
+.news_jp p {
+    font-size: 1.5vw;
+}
+
+.news_jp .pointer {
+    position: absolute;
+    top: 1.1vw;
+    right: 3vw;
+    transform: scale(1, 1.8);
+}
+
 
 .PRODUCT-LINEUP {
     width: 100%;
@@ -444,12 +574,12 @@ body .slider {
 }
 
 .MOBILE-GAMES .blocks .as-index {
-    padding-left: 2vw;
+    padding-left: 2.5vw;
     margin-top: 0.6vw;
 }
 
 .MOBILE-GAMES .blocks .gp-index {
-    padding-left: 1.5vw;
+    padding-left: 2vw;
     margin-top: 0.6vw;
 }
 
